@@ -51,7 +51,7 @@ A curated set of SAP business object APIslisted with:
 
 ## ⚙️ Power Automate + Copilot Studio in Action
 
-#### Create Scenarios — From Conversations to Transactions
+#### Creating SAP Objects with Agents:
 
 **Old Way**:  
 To create a sales order from an email, you had to extract structured data, manually map it to SAP fields, and build a connector flow.
@@ -68,7 +68,7 @@ Copilot Studio:
 - Generates the correct OData URL  
 - Calls your SAP system directly—no manual mapping needed
 
-#### Query Scenarios — Natural Language Filters for Dynamic Data
+#### Quering SAP Data through natural language:
 
 **Old Way**:  
 You had to manually define filters and query parameters in a rigid format.
