@@ -10,7 +10,7 @@ To operate effectively, agents need:
 - **Standardized templates for communication**  
 - To **decide the appropriate SAP action**  and to **generate the requests and actions needed autonomously**
 
- SAP OData APIs enable users to create agents that can do just that.
+ SAP OData APIs enable agents to do just that.
 
 While these APIs are available in SAP’s official documentation, they are often difficult to navigate. This repository serves as a **one-stop shop** for:
 
