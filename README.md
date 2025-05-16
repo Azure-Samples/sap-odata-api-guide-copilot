@@ -20,9 +20,9 @@ While these APIs are available in SAP’s official documentation, they are often
 
 ---
 
-# 📦 What’s Inside This Repository
+# 📦 What’s Inside This Repository<br>
 
-## ✅ SAP OData API Requests
+## ✅ [SAP OData API Requests](https://github.com/Azure-Samples/sap-odata-api-guide-copilot/blob/main/SAP%20OData%20API%20Reference.md)<br>
 
 A curated set of SAP business object APIslisted with:
 - URLs for GET and POST requests
@@ -49,10 +49,11 @@ A curated set of SAP business object APIslisted with:
 | Debit Memo Request | [CreateDebit Memo Request](https://github.com/noopurav/ordertocashsteps/tree/main?tab=readme-ov-file#manage-debit-memo-requests) | [Create Debit Memo Request](https://github.com/Azure-Samples/sap-odata-api-guide-copilot/blob/main/CreateDebitmemoRequest.zip)  |
 
 
-## ⚙️ Power Automate + Copilot Studio in Action
+## ⚙️ Power Automate Flows:
 
-[INSERT IMAGE]
+[INSERT IMAGE] <br>
 
+These Power Automate flows provide examples of how you can dynamically create SAP objects and query SAP systems without having to fill in each field and can be easily used by Agents: <br>
 #### Creating SAP Objects with Agents:
 
 **Old Way**:  
