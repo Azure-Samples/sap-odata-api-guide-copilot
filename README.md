@@ -51,6 +51,8 @@ A curated set of SAP business object APIslisted with:
 
 ## ⚙️ Power Automate + Copilot Studio in Action
 
+[INSERT IMAGE]
+
 #### Creating SAP Objects with Agents:
 
 **Old Way**:  
