@@ -3,7 +3,7 @@
 
 ## 🚀 Why SAP OData APIs Matter for Agents and Automation
 
-SAP OData APIs are foundational for building intelligent, time-saving agents on top of SAP workflows. As organizations seek to automate complex business processes, the ability to interact with SAP in a standardized, scalable way becomes essential—not just for agents, but for any modern integration. Without a standardized approach like OData, automation efforts become fragmented and hard to scale. OData provides a consistent, RESTful interface to SAP business objects—unlocking the ability to build agents that can actually be enriched with  information from SAP systems as well as help people perform transactions in them,
+SAP OData APIs are foundational for building intelligent, time-saving agents on top of SAP workflows. As organizations seek to automate complex business processes, the ability to interact with SAP in a standardized, scalable way becomes essential—not just for agents, but for any modern integration. OData provides a consistent, RESTful interface to SAP business objects—unlocking the ability to build agents that can actually be enriched with  information from SAP systems as well as help people perform transactions in them.
 
 To operate effectively, agents need:
 
