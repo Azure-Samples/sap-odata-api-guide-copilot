@@ -20,23 +20,23 @@ While these APIs are available in SAP’s official documentation, they are often
 
 ---
 
-## 📦 What’s Inside This Repository
+# 📦 What’s Inside This Repository
 
-### ✅ SAP OData API Requests
+## ✅ SAP OData API Requests
 
 A curated set of SAP business object APIslisted with:
 - URLs for GET and POST requests
 - Example payloads for each.
   
 
-    # List of SAP APIs from Buisness Accelerator Hub:
+### List of SAP APIs from Buisness Accelerator Hub:
 
 | **SAP Object** | **API Documentation** | **Power Automate Flow** |
 |----------------|-----------------------|-------------------------|
 | Sales Order | [Sales Order](https://github.com/Azure-Samples/sap-odata-api-guide-copilot/blob/main/Createsalesorder.zip) |[Create Sales Order](https://github.com/Azure-Samples/sap-odata-api-guide-copilot/blob/main/Createsalesorder.zip)|
 | OutBound Delivery | [OutBound Delivery](https://github.com/noopurav/ordertocashsteps/tree/main?tab=readme-ov-file#deliver-the-goods-vl01n) | [Create OutBound Delivery](https://github.com/Azure-Samples/sap-odata-api-guide-copilot/blob/main/CreateOutboundDelivery.zip) |
 | Billing Document | [Billing Document](https://github.com/noopurav/ordertocashsteps/tree/main?tab=readme-ov-file#billing-the-sales-order-vf01) | [Create Billing Document](https://github.com/Azure-Samples/sap-odata-api-guide-copilot/blob/main/Createsalesorder.zip) |
-| Releasing Billing to Accounting | [Release Billing Document](https://github.com/noopurav/ordertocashsteps/tree/main#release-billing-document-to-fi-accounting-vf02) | Create Billing Document|
+| Releasing Billing to Accounting | [Release Billing Document](https://github.com/noopurav/ordertocashsteps/tree/main#release-billing-document-to-fi-accounting-vf02) | [Release Billing Document](https://github.com/Azure-Samples/sap-odata-api-guide-copilot/blob/main/Createsalesorder.zip)|
 | Purchase Requisition | [Purchase Requistion](https://github.com/noopurav/ordertocashsteps/tree/main?tab=readme-ov-file#purchase-requisition) | [Create Purchase Requisition](https://github.com/Azure-Samples/sap-odata-api-guide-copilot/blob/main/CreatePurchaseRequistion.zip)  | 
 | Purchase Order | [Purchase Order](https://github.com/noopurav/ordertocashsteps/tree/main?tab=readme-ov-file#create-purchase-order) | [Create Purchase Order](https://github.com/noopurav/ordertocashsteps/blob/main/CreatePurchaseOrder.zip)] | 
 | Goods Receipt |  [Goods Receipt](https://github.com/noopurav/ordertocashsteps/tree/main?tab=readme-ov-file#goods-receipt )   |   Create Goods Receipt  |
@@ -49,7 +49,7 @@ A curated set of SAP business object APIslisted with:
 | Debit Memo Request | [CreateDebit Memo Request](https://github.com/noopurav/ordertocashsteps/tree/main?tab=readme-ov-file#manage-debit-memo-requests) | [Create Debit Memo Request](https://github.com/Azure-Samples/sap-odata-api-guide-copilot/blob/main/CreateDebitmemoRequest.zip)  |
 
 
-### ⚙️ Power Automate + Copilot Studio in Action
+## ⚙️ Power Automate + Copilot Studio in Action
 
 #### Create Scenarios — From Conversations to Transactions
 
@@ -86,23 +86,13 @@ Copilot Studio:
 
 ---
 
-### 🤖 Copilot Studio Agent Project
+## 🤖 Copilot Studio Agent Project
 
 A ready-to-use agent that:
 
-- Triggers flows via natural language or events  
-- Uses memory and reasoning to handle SAP transactions  
-- Orchestrates actions across SAP and Microsoft 365  
-- Accepts user input, uses an HTTP connector to call Azure OpenAI, and returns structured responses
-
----
-
-## ✨ The Impact
-
-- **Faster Workflows**: From intent to action—no manual setup  
-- **Smarter Automation**: AI handles request generation and execution  
-- **More Accessible**: Business users can interact with SAP using plain language  
-
+- Triggers flows via natural language or SAP events.
+- Uses memory and reasoning to make decisions using information from SAP and M365.
+- Orchestrates actions across SAP through the Microsoft Teams interface.
 ---
 
 ## 🛠️ Build Your Own Agent
