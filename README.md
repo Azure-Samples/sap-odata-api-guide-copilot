@@ -47,9 +47,9 @@ A curated set of SAP business object APIslisted with:
 | Customer Return | [CustomerReturn](https://github.com/noopurav/ordertocashsteps/tree/main?tab=readme-ov-file#-manage-customer-returns) | [Create Customer Return](https://github.com/Azure-Samples/sap-odata-api-guide-copilot/blob/main/CreateCustomerReturn.zip)  |
 | Credit Memo Request | [Credit Memo Request](https://github.com/noopurav/ordertocashsteps/tree/main?tab=readme-ov-file#manage-credit-memo-requests)  |  [Create Credit Memo Request](https://github.com/Azure-Samples/sap-odata-api-guide-copilot/blob/main/CreditMemoRequest.zip)  |
 | Debit Memo Request | [CreateDebit Memo Request](https://github.com/noopurav/ordertocashsteps/tree/main?tab=readme-ov-file#manage-debit-memo-requests) | [Create Debit Memo Request](https://github.com/Azure-Samples/sap-odata-api-guide-copilot/blob/main/CreateDebitmemoRequest.zip)  |
+<br><br>
 
-
-## ⚙️ Power Automate Flows(https://github.com/Azure-Samples/sap-odata-api-guide-copilot/tree/main/PowerAutomateFlows):
+## ⚙️ [Power Automate Flows](https://github.com/Azure-Samples/sap-odata-api-guide-copilot/tree/main/PowerAutomateFlows):
 
 [INSERT IMAGE] <br>
 
@@ -90,14 +90,12 @@ Copilot Studio:
 ---
 <br><br>
 
-This repo is more than a toolkit—it’s a **starting point** for building intelligent agents that:
-
-- Understand business context  
-- Interact with SAP in real time  
+This repo is a toolkit— for building intelligent agents  that:
+- Understand business context and interact with SAP in real time informed with that context. 
 - Dynamically generate OData queries from everyday work situations (e.g., emails, chats, meetings)  
-- Use Copilot Studio to deploy these capabilities directly into your workflows—like Microsoft Teams, Outlook, or Power Apps  
+- Are deployed directly into your workflows—like Microsoft Teams, Outlook using Copilot Studio. 
 
-Whether you're automating purchase requisitions from a Teams conversation or querying blocked sales orders from an email, this solution empowers agents to act with intelligence and context—right where work happens.
+Whether you're automating purchase requisitions from a Teams conversation or querying blocked sales orders from an email, this solution along with Copilot Studio will empower you to create SAP agents that take action with intelligence and context—right where work happens.
 
 ---
 
