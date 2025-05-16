@@ -1,46 +1,35 @@
-# 🤖 Making SAP Transactions Accessible Using OData APIs for Autonomous Agents and more on Power Platform. <br><br>
-
-### Why APIs and OData for SAP?<br>
-
-APIs provide a **consistent interface** for interacting with complex systems like SAP. With OData APIs, agents can:<br>
-
-- Dynamically construct requests based on user intent  
-- Call SAP transactions without needing custom logic  
-- Improve accuracy and efficiency over time  <br>
-
-### Importance of OData for General Application Development<br>
-
-**OData (Open Data Protocol)** is crucial for modern application development. Key reasons include:<br>
-
-- **Interoperability**: Seamless integration between SAP and non-SAP applications.
-- **Standardization**: Simplifies development and ensures consistency.
-- **Flexibility**: Suitable for various application types.<br>
-
-By leveraging SAP OData APIs, developers can create robust, scalable applications that meet modern enterprise needs.<br><br>
+# 🤖 Making SAP Transactions Accessible for Autonomous Agents with OData APIs & Power Platform
 
 
-## 🌐 Why APIs Matter for Autonomous Agents and Beyond:<br>
+## 🚀 Why SAP OData APIs Matter for Agents and Automation
 
-As agents become more autonomous, their ability to interact with enterprise systems through **APIs** has become not just beneficial—but essential. This repository demonstrates how to make **SAP transactions accessible to agents** using a combination of the **Power Platform**, **Copilot Studio**, **Azure AI Foundry**, and **SAP OData APIs**.<br>
+SAP OData APIs are foundational for building intelligent, time-saving agents on top of SAP workflows. As organizations seek to automate complex business processes, the ability to interact with SAP in a standardized, scalable way becomes essential—not just for agents, but for any modern integration. Without a standardized approach like OData, automation efforts become fragmented and hard to scale. OData provides a consistent, RESTful interface to SAP business objects—unlocking the ability to build agents that can actually be enriched with  information from SAP systems as well as help people perform transactions in them,
 
-In traditional automation setups, **connectors** were used to bridge systems. These connectors often relied on **predefined input fields** that required manual data entry or mappings. While effective for simple workflows, this model breaks down in the context of autonomous agents. Agents are not designed to manually fill out forms or input fields. Instead, they require:<br>
+To operate effectively, agents need:
 
-- **Standardized templates** for communication.
-- The ability for **dynamic request generation** based on context and reasoning. <br><br>
+- **Standardized templates for communication**  
+- To **decide the appropriate SAP action**  and to **generate the requests and actions needed autonomously**
 
+ SAP OData APIs enable users to create agents that can do just that.
 
+While these APIs are available in SAP’s official documentation, they are often difficult to navigate. This repository serves as a **one-stop shop** for:
 
-## 📦 What's in This Repository<br>
+- Sample payloads and API URLs for common business objects like Sales Orders, Purchase Requisitions, and Invoices ( See the list below):
+- A practical starting point for using these APIs in **Power Automate flows**  for dynamic request generation for these APIs.
+- Templates and examples to help you build **autonomous agents** that interact with SAP intelligently.
 
-This repo includes everything needed to build and deploy intelligent agents that can interact with SAP:<br>
+---
 
-### - OData API Templates<br>
-  A curated list of common SAP business object APIs (e.g., Sales Orders, Materials, Vendors) with:
-  - Minimum required fields to create each object
-  - Example payloads for quick testing and integration<br>
+## 📦 What’s Inside This Repository
 
+### ✅ SAP OData API Requests
 
-  # List of SAP APIs from Buisness Accelerator Hub:
+A curated set of SAP business object APIslisted with:
+- URLs for GET and POST requests
+- Example payloads for each.
+  
+
+    # List of SAP APIs from Buisness Accelerator Hub:
 
 | **SAP Object** | **API Documentation** | **Power Automate Flow** |
 |----------------|-----------------------|-------------------------|
@@ -59,94 +48,75 @@ This repo includes everything needed to build and deploy intelligent agents that
 | Credit Memo Request | [Credit Memo Request](https://github.com/noopurav/ordertocashsteps/tree/main?tab=readme-ov-file#manage-credit-memo-requests)  |  [Create Credit Memo Request](https://github.com/Azure-Samples/sap-odata-api-guide-copilot/blob/main/CreditMemoRequest.zip)  |
 | Debit Memo Request | [CreateDebit Memo Request](https://github.com/noopurav/ordertocashsteps/tree/main?tab=readme-ov-file#manage-debit-memo-requests) | [Create Debit Memo Request](https://github.com/Azure-Samples/sap-odata-api-guide-copilot/blob/main/CreateDebitmemoRequest.zip)  |
 
- 
- ### - Power Automate Flows<br>
 
-Traditionally, working with SAP OData APIs required manual parsing of responses, mapping fields, and configuring connectors—often a tedious and technical process. But now, with **Copilot Studio**, you can use **natural language** to dynamically generate and execute OData requests. Here's how it transforms two common scenarios:<br>
+### ⚙️ Power Automate + Copilot Studio in Action
 
-> 💡 **Note:** The Power Automate flows provided here are just a starting point. You can customize and extend them to suit your specific SAP scenarios.<br>
+#### Create Scenarios — From Conversations to Transactions
 
----
-**🛠️ Create Scenarios — From Conversations to Transactions**<br>
+**Old Way**:  
+To create a sales order from an email, you had to extract structured data, manually map it to SAP fields, and build a connector flow.
 
-**Old Way:**  
-To create a sales order from lets say an email, you had to extract structured data from emails, manually map it to SAP fields, and build a connector flow.
+**New Way with AI**: Just say:
 
-**New Way with AI:** 
-Just say:  
-> “Create a sales order from this email”
-or  <br>
-> “Turn this Teams conversation into a Purchase Requisition.”
-
-Copilot Studio uses AI to:
-- Understands the API documentation and extract relevant fields and creates the correct JSON Payload.
-- Generates the correct OData URL.
-- Call your SAP system directly—no manual mapping needed.
-
-📷 _Before: Manual field mapping and connector setup_  
-./images/create-before.png
-
-📷 _After: Natural language to sales order via Copilot Studio_  
-./images/create-after.png
-
----
-
-**🔍 Query Scenarios — Natural Language Filters for Dynamic Data**
-
-**Old Way:**  
-You had to manually define filters and query parameters in a rigid format.
-
-**New Way with AI:**  
-Just ask:  
-> “Get me all POs that are open and have vendor ‘1023’”  
-or  
-> “Show me the sales orders that were blocked in the last month.”
+- “Create a sales order from this email”  
+- “Turn this Teams conversation into a Purchase Requisition”
 
 Copilot Studio:
-- Parses your sentence.
-- Builds the correct OData query URL.
-- Executes it against your SAP backend.
 
-📷 _Before: Static filter configuration in Power Automate_  
-![Insert/query-before.png
+- Understands the API documentation  
+- Extracts relevant fields and creates the correct JSON payload  
+- Generates the correct OData URL  
+- Calls your SAP system directly—no manual mapping needed
 
-📷 _After: Dynamic query generation from natural language_  
-./images/query-after.png
+#### Query Scenarios — Natural Language Filters for Dynamic Data
+
+**Old Way**:  
+You had to manually define filters and query parameters in a rigid format.
+
+**New Way with AI**: Just ask:
+
+- “Get me all POs that are open and have vendor ‘1023’”  
+- “Show me the sales orders that were blocked in the last month”
+
+Copilot Studio:
+
+- Parses your sentence  
+- Builds the correct OData query URL  
+- Executes it against your SAP backend
 
 ---
 
-#### ✨ The Impact
+### 🤖 Copilot Studio Agent Project
 
-- **Faster workflows**: Skip the manual setup and go straight from intent to action.
--  **Smarter automation**: AI handles both the generation and execution of requests.
-- **More accessible**: Business users can interact with SAP data without needing to know OData syntax.
--
+A ready-to-use agent that:
 
-  Pre-built flows for each transation mentioned below ( look at the Table of contents):
-  - Accept user input
-  - Use an HTTP connector to call an  Azure OpenAI API that converts natural language into structured API requests
-  - Call SAP using the OData connector
-  - Return the response to an agent created on Copilot Studio for further processing
- 
+- Triggers flows via natural language or events  
+- Uses memory and reasoning to handle SAP transactions  
+- Orchestrates actions across SAP and Microsoft 365  
+- Accepts user input, uses an HTTP connector to call Azure OpenAI, and returns structured responses
 
-### - Copilot Studio Agent Project**  
-  A ready-to-use Copilot Studio project that demonstrates:
-  - How to trigger flows using natural language or events
-  - How using OData APIs make SAP transactions more easiliy accessible for Agents.
-  - How to use new AI features like reasoning and memory
-  - How to orchestrate actions across Microsoft 365 and SAP to save time and automate business processes
-  - Instructions on how to create it.
+---
 
+## ✨ The Impact
 
-## 🚀 Why This Matters
+- **Faster Workflows**: From intent to action—no manual setup  
+- **Smarter Automation**: AI handles request generation and execution  
+- **More Accessible**: Business users can interact with SAP using plain language  
 
-By combining the Power Platform, OpenAI, and SAP OData APIs, this solution enables:
+---
 
-- Seamless integration between communication tools (like Outlook and Teams) and ERP systems  
-- Agents that can reason, decide, and act—without manual intervention  
-- A scalable foundation for building intelligent business process automation
+## 🛠️ Build Your Own Agent
 
+This repo is more than a toolkit—it’s a **starting point** for building intelligent agents that:
 
+- Understand business context  
+- Interact with SAP in real time  
+- Dynamically generate OData queries from everyday work situations (e.g., emails, chats, meetings)  
+- Use Copilot Studio to deploy these capabilities directly into your workflows—like Microsoft Teams, Outlook, or Power Apps  
+
+Whether you're automating purchase requisitions from a Teams conversation or querying blocked sales orders from an email, this solution empowers agents to act with intelligence and context—right where work happens.
+
+---
 
 
 
