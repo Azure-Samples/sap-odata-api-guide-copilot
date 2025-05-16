@@ -86,15 +86,6 @@ Copilot Studio:
 
 ---
 
-## 🤖 Copilot Studio Agent Project
-
-A ready-to-use agent that:
-
-- Triggers flows via natural language or SAP events.
-- Uses memory and reasoning to make decisions using information from SAP and M365.
-- Orchestrates actions across SAP through the Microsoft Teams interface.
----
-
 ## 🛠️ Build Your Own Agent
 
 This repo is more than a toolkit—it’s a **starting point** for building intelligent agents that:
