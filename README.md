@@ -24,7 +24,7 @@ While these APIs are available in SAP’s official documentation, they are often
 
 ## ✅ [SAP OData API Requests](https://github.com/Azure-Samples/sap-odata-api-guide-copilot/blob/main/SAP%20OData%20API%20Reference.md)<br>
 
-A curated set of SAP business object APIslisted with:
+A curated set of SAP business object APIs listed with:
 - URLs for GET and POST requests
 - Example payloads for each.
   
