@@ -17,8 +17,8 @@
 | Credit Memo Request | [Credit Memo Request](https://github.com/Azure-Samples/sap-odata-api-guide-copilot/blob/main/SAP%20OData%20API%20Reference.md#manage-credit-memo-requests)  |  [Create Credit Memo Request](https://github.com/Azure-Samples/sap-odata-api-guide-copilot/blob/main/PowerAutomateFlows/CreditMemoRequest.zip)  |
 | Debit Memo Request | [CreateDebit Memo Request](https://github.com/Azure-Samples/sap-odata-api-guide-copilot/blob/main/SAP%20OData%20API%20Reference.md#manage-debit-memo-requests) | [Create Debit Memo Request](https://github.com/Azure-Samples/sap-odata-api-guide-copilot/blob/main/PowerAutomateFlows/CreateDebitmemoRequest.zip)  |
 
-## Create Sales Order{#create-sales-order}
-![Create Sales Order VA01](images/CreatedSalesOrder-VA01.jpg)
+## Create Sales Order
+
 ### OData Service
 Information on SAP API Business Hub: [Sales Order (A2X)](https://api.sap.com/api/OP_API_SALES_ORDER_SRV_0001/overview)
 
