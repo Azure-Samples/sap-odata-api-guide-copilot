@@ -1091,4 +1091,120 @@ X-CSRF-Token: {{FetchReply.response.headers.x-csrf-token}}
 }
 ```
 
+## Enterprise Projects
+
+### OData Service
+Information on SAP API Business Hub: [Enterprise Projects](https://api.sap.com/api/API_ENTERPRISE_PROJECT_SRV_0002/overview)
+
+* https://{host}:{port}/sap/opu/odata/sap/API_ENTERPRISE_PROJECT_SRV;v=0002/A_EnterpriseProject(guid':ProjectUUID')
+#### Sample Payload:
+```http
+# Fetch Project "1! and 
+# fetch X-CSRF-Token used for Project Record
+# @name FetchReply
+GET   
+Authorization: Basic {{username}}:{{password}}
+X-CSRF-Token: Fetch
+
+```
+
+```http
+# Creates Enterprise Project Definition
+POST https://{host}:{port}/sap/opu/odata/sap/API_ENTERPRISE_PROJECT_SRV;v=0002/A_EnterpriseProject
+Content-Type: application/json
+Authorization: Basic {{username}}:{{password}}
+X-CSRF-Token: {{FetchReply.response.headers.x-csrf-token}}
+
+{
+  "Project": "",
+  "ProjectDescription": "",
+  "EnterpriseProjectType": "03",
+  "ProjectStartDate": "/Date(1746819001294)/",
+  "ProjectEndDate": "/Date(1746819001294)/",
+  "CustomerUUID": "",
+  "ProjectCurrency": "",
+  "ControllingArea": "",
+  "ResponsibleCostCenter": "",
+  "ProfitCenter": "",
+  "FunctionalArea": "",
+  "Plant": "1710",
+  "Location": "",
+  "ProjectProfileCode": "",
+  "AvailabilityControlIsActive": "",
+  "IsBillingRelevant": "",
+  "to_EnterpriseProjectElement": {
+    "results": [
+      {
+        "ProjectElement": "",
+        "ProjectElementDescription": "",
+        "PlannedStartDate": "",
+        "PlannedEndDate": "",
+        "ResponsibleCostCenter": "",
+        "ProfitCenter": "",
+        "FunctionalArea": "",
+        "Plant": "",
+        "Location": "",
+        "CostingSheet": "",
+        "InvestmentProfile": ""
+      }
+    ]
+  },
+  "to_EntProjRole": {
+    "results": [
+      {
+        "ProjectRoleType": "",
+        "ProjectRoleCategory": "",
+        "ProjectRoleName": ""
+      }
+    ]
+  },
+  "to_EntProjTeamMember": {
+    "results": [
+      {
+        "BusinessPartnerUUID": "",
+        "to_EntProjEntitlement": {
+          "results": [
+            {
+              "ProjectRoleType": ""
+            }
+          ]
+        }
+      }
+    ]
+  }
+}
+
+
+```
+## Project Billing Request 
+Note: This is for S/4HANA Cloud edition - If you want to use this for S/4HANA or ECC systems you can call it via a BAPI using the [ERP connector on Copilot Studio/Power Platform](https://learn.microsoft.com/en-us/connectors/saperp/)
+
+### OData Service
+Information on SAP API Business Hub: [Project Billing Request](https://api.sap.com/api/CE_PROJECTBILLINGREQUEST_0001/overview)
+
+* https://{host}:{port}/sap/opu/odata4/sap/api_projectbillingrequest/srvd_a2x/sap/projectbillingrequest/0001/ProjectBillingRequest
+
+#### Sample Payload:
+```http
+# Fetch entities from ProjectBillingRequest "1! and 
+# fetch X-CSRF-Token used for rojectBillingRequest
+# @name FetchReply
+GET   https://{host}:{port}/sap/opu/odata4/sap/api_projectbillingrequest/srvd_a2x/sap/projectbillingrequest/0001/ProjectBillingRequest
+Authorization: Basic {{username}}:{{password}}
+X-CSRF-Token: Fetch
+```
+
+```http
+# Creates a ProjectBillingRequest 
+POST https://{host}:{port}/sap/opu/odata4/sap/api_projectbillingrequest/srvd_a2x/sap/projectbillingrequest/0001/ProjectBillingRequest/SAP__self.CreateProjectBillingRequest
+Content-Type: application/json
+Authorization: Basic {{username}}:{{password}}
+X-CSRF-Token: {{FetchReply.response.headers.x-csrf-token}}
+
+{
+  "BillingWBSElementInternalID": "",
+  "OnAccountItemsAreIncluded": ""
+}
+```
+
 
