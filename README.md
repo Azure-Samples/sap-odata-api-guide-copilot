@@ -110,5 +110,3 @@ This project welcomes contributions and suggestions. Use Pull Requests to propos
 Please use [GitHub Issues](https://github.com/Azure-Samples/sap-odata-api-guide-copilot/issues) to report errors or request new features.
 
 This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/). For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or contact [opencode@microsoft.com](opencode@microsoft.com) with any additional questions or comments.
-
-## Resources
