@@ -66,10 +66,10 @@ To create a sales order from an email, you had to extract structured data, manua
 - “Create a sales order from this email”  
 - “Turn this Teams conversation into a Purchase Requisition”
 
-Copilot Studio:
+The Power Automate flow:
 
-- Understands the API documentation  
-- Extracts relevant fields and creates the correct JSON payload  
+- Understands the API documentation using Azure Open AI
+- Extracts relevant fields and creates the correct JSON payload using Azure Open AI
 - Generates the correct OData URL  
 - Calls your SAP system directly—no manual mapping needed
 
@@ -83,12 +83,11 @@ You had to manually define filters and query parameters in a rigid format.
 - “Get me all POs that are open and have vendor ‘1023’”  
 - “Show me the sales orders that were blocked in the last month”
 
-Copilot Studio:
+Power Automate Flow:
 
 - Parses your sentence  
-- Builds the correct OData query URL  
+- Builds the correct OData query URL using AI.
 - Executes it against your SAP backend
-
 ---
 
 This repo is a toolkit— for building intelligent agents  that:
