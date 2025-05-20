@@ -90,7 +90,6 @@ Copilot Studio:
 - Executes it against your SAP backend
 
 ---
-<br><br>
 
 This repo is a toolkit— for building intelligent agents  that:
 - Understand business context and interact with SAP in real time informed with that context. 
