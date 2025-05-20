@@ -63,15 +63,15 @@ To create a sales order from an email, you had to extract structured data, manua
 
 **New Way with AI**: Just say:
 
-- “Create a sales order from this email”  
-- “Turn this Teams conversation into a Purchase Requisition”
+- “Create a sales order from this email.”  
+- “Turn this Teams conversation into a Purchase Requisition.”
 
 The Power Automate flow:
 
-- Understands the API documentation using Azure Open AI
-- Extracts relevant fields and creates the correct JSON payload using Azure Open AI
-- Generates the correct OData URL  
-- Calls your SAP system directly—no manual mapping needed
+- Understands the API documentation using Azure OpenAI.
+- Extracts relevant fields and creates the correct JSON payload using Azure OpenAI.
+- Generates the correct OData URL.
+- Calls your SAP system directly—no manual mapping needed.
 
 #### Quering SAP Data through natural language:
 
@@ -80,19 +80,19 @@ You had to manually define filters and query parameters in a rigid format.
 
 **New Way with AI**: Just ask:
 
-- “Get me all POs that are open and have vendor ‘1023’”  
-- “Show me the sales orders that were blocked in the last month”
+- “Get me all POs that are open and have vendor ‘1023’.”  
+- “Show me the sales orders that were blocked in the last month.”
 
 Power Automate Flow:
 
-- Parses your sentence  
+- Parses your sentence.
 - Builds the correct OData query URL using AI.
-- Executes it against your SAP backend
+- Executes it against your SAP backend.
 ---
 
 This repo is a toolkit— for building intelligent agents  that:
 - Understand business context and interact with SAP in real time informed with that context. 
-- Dynamically generate OData queries from everyday work situations (e.g., emails, chats, meetings)  
+- Dynamically generate OData queries from everyday work situations. (e.g., emails, chats, meetings)  
 - Are deployed directly into your workflows—like Microsoft Teams, Outlook using Copilot Studio. 
 
 Whether you're automating purchase requisitions from a Teams conversation or querying blocked sales orders from an email, the APIs and Power Automate flows in this solution along with Copilot Studio will empower you to create SAP agents that take action with intelligence and context—right where work happens.
