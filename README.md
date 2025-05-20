@@ -95,7 +95,7 @@ This repo is a toolkit— for building intelligent agents  that:
 - Dynamically generate OData queries from everyday work situations (e.g., emails, chats, meetings)  
 - Are deployed directly into your workflows—like Microsoft Teams, Outlook using Copilot Studio. 
 
-Whether you're automating purchase requisitions from a Teams conversation or querying blocked sales orders from an email, this solution along with Copilot Studio will empower you to create SAP agents that take action with intelligence and context—right where work happens.
+Whether you're automating purchase requisitions from a Teams conversation or querying blocked sales orders from an email, the APIs and Power Automate flows in this solution along with Copilot Studio will empower you to create SAP agents that take action with intelligence and context—right where work happens.
 
 ---
 
