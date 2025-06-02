@@ -69,8 +69,6 @@ X-CSRF-Token: {{FetchReply.response.headers.x-csrf-token}}
 }
 ```
 
-![Created Sales Order in the SAP System VA03](images/CreatedSalesOrder-VA03.jpg)
-
 
 ## Deliver the goods (VL01N)
 
